@@ -6,7 +6,7 @@ metadata:
 spec:
   template:      
     metadata:
-      name: '{{namespace}}-billing'
+      name: qa
     spec:
       project: default
       source:
@@ -20,5 +20,5 @@ spec:
         syncOptions:
           - CreateNamespace=true  
         automated:
-          prune: true # 
+          prune: true 
           selfHeal: true 
