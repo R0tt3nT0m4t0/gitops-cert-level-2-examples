@@ -24,7 +24,8 @@ spec:
   
   # Driffting differences to ignore
   ignoreDifferences:
-  - group: apps
-    kind: Deployment
-    jsonPointers:
-    - /spec/replicas
+    - jsonPointers:
+        - /spec/replicas
+      kind: Deployment
+      
+      
