@@ -24,9 +24,7 @@ spec:
    
   # Drifting differences to ignore
   ignoreDifferences:
-    - kind: Deployment
+    - kind: all
       jsonPointers:
         - metadata/annotations/creation
-    - kind: Secret
-      jsonPointers:
         - data/my-password
