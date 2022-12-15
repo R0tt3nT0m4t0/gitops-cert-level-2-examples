@@ -24,7 +24,9 @@ spec:
    
   # Drifting differences to ignore
   ignoreDifferences:
-    - kind: all
+    - group: "*"
+      kind: "*"
       jsonPointers:
         - metadata/annotations/creation
         - data/my-password
+      
